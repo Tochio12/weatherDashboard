@@ -28,3 +28,12 @@
 .search-button {
     padding: 10px 15px;
 }
+
+.past-search {
+    background-color: white;
+    text-align: left;
+    border-width: thin;
+    color: grey;
+    padding: 0 20px;
+    height: 40px;
+}
