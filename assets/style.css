@@ -25,9 +25,9 @@
     padding: 0 15px;
 }
 
-.search-button {
+/* .search-button {
     padding: 10px 15px;
-}
+} */
 
 .past-search {
     background-color: white;
@@ -78,3 +78,10 @@
     color: white;
     padding: 5px 10px;
 }
+
+.five-day-card {
+    position: relative;
+    width: 20%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
