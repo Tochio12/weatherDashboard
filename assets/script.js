@@ -21,7 +21,7 @@ function searchHistorySection() {
         var button = document.createElement("button");
         button.setAttribute('type', 'button');
         button.setAttribute('aria-controls', 'today forecast');
-        button.classList.add('history-button', 'button-history');
+        button.classList.add( 'button-history');
 
         button.setAttribute('data-search', savedSearches[i]);
         button.textContent =savedSearches[i];
@@ -42,7 +42,7 @@ function appendHistory(search) {
 function startSearchHistory() {
     var storedHistory = localStorage.getItem('search-history');
     if (storedHistory) {
-        storedHistory =JSON.parse(storedHistory);
+        savedSearches =JSON.parse(storedHistory);
     }
     searchHistorySection();
 };
@@ -206,13 +206,13 @@ function submitSearch(r) {
 };
 
 function historyClick(r) {
-    if (!e.target.matches('.button-history')) {
+    if (!r.target.matches('.button-history')) {
         return;
       }
     
       var button = r.target;
       var search = button.getAttribute('data-search');
-      fetchCoords(search); 
+      coords(search); 
 }
 
 startSearchHistory();
