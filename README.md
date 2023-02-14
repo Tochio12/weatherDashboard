@@ -25,3 +25,4 @@ Mock-Up
 </div>
 
 ## Website link
+https://tochio12.github.io/challenge-6-weatherDashboard/
